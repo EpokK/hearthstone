@@ -1,2 +1,2 @@
-hearthstone
+Hearthstone
 ===========
