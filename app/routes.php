@@ -21,4 +21,4 @@ Route::post('login', array('uses' => 'HomeController@doLogin'));
 Route::get('logout', array('uses' => 'HomeController@doLogout'));
 
 // route to display deck list
-Route::get('deck', array('uses' => 'HomeController@deckList'));
+Route::get('deck', array('uses' => 'HomeController@showDecklist'));
