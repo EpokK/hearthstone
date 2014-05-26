@@ -11,6 +11,7 @@ class DatabaseSeeder extends Seeder {
 		Eloquent::unguard();
 
 		$this->call('UserTableSeeder');
+		$this->call('DeckTableSeeder');
 	}
 }
 
@@ -37,71 +38,63 @@ class DeckTableSeeder extends Seeder
 	public function run()
 	{
 		DB::table('decks')->delete();
-		User::create(array(
+		Deck::create(array(
 			'user_id' => 2,
 			'public' => true,
 			'name' => 'Zoo',
 			'type' => 'AGGRO',
 			'hero' => 'WARLOCK'
 		));
-		DB::table('decks')->delete();
-		User::create(array(
+		Deck::create(array(
 			'user_id' => 2,
 			'public' => false,
 			'name' => 'Huntard',
 			'type' => 'AGGRO',
 			'hero' => 'HUNTER'
 		));
-		DB::table('decks')->delete();
-		User::create(array(
+		Deck::create(array(
 			'user_id' => 2,
 			'public' => false,
 			'name' => 'ancient watcher',
 			'type' => 'CONTROL',
 			'hero' => 'DRUID'
 		));
-		DB::table('decks')->delete();
-		User::create(array(
+		Deck::create(array(
 			'user_id' => 2,
 			'public' => true,
 			'name' => 'miracle',
 			'type' => 'COMBO',
 			'hero' => 'ROGUE'
 		));
-		DB::table('decks')->delete();
-		User::create(array(
+		Deck::create(array(
 			'user_id' => 2,
 			'public' => true,
 			'name' => 'Bloodlust Teacher',
 			'type' => 'MIDRANGE',
 			'hero' => 'SHAMAN'
 		));
-		DB::table('decks')->delete();
-		User::create(array(
+		Deck::create(array(
 			'user_id' => 2,
 			'public' => false,
 			'name' => 'Amaz',
 			'type' => 'MIDRANGE',
 			'hero' => 'PRIEST'
 		));
-		DB::table('decks')->delete();
-		User::create(array(
+		Deck::create(array(
 			'user_id' => 2,
 			'public' => false,
 			'name' => 'Weapon master',
 			'type' => 'AGGRO',
 			'hero' => 'WARRIOR'
 		));
-		DB::table('decks')->delete();
-		User::create(array(
+		Deck::create(array(
 			'user_id' => 2,
 			'public' => true,
 			'name' => 'Frost',
 			'type' => 'COMBO',
 			'hero' => 'MAGE'
 		));
-		DB::table('decks')->delete();
-		User::create(array(
+		Deck::create(array(
 			'user_id' => 2,
 			'public' => true,
 			'name' => 'palaheal',
