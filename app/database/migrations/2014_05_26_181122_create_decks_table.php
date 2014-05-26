@@ -18,6 +18,13 @@ class CreateDecksTable extends Migration {
 			$table->integer('user_id');
 			$table->boolean('public');
 			$table->string('name', 32);
+			$table->enum('type', array(
+				'NONE',
+				'AGGRO',
+				'COMBO',
+				'CONTROL',
+				'MIDRANGE'
+			));
 			$table->enum('hero', array(
 				'MAGE',
 				'WARLOCK',
