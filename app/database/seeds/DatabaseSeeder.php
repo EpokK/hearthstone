@@ -1,7 +1,6 @@
 <?php
 
 class DatabaseSeeder extends Seeder {
-
 	/**
 	 * Run the database seeds.
 	 *
@@ -13,12 +12,10 @@ class DatabaseSeeder extends Seeder {
 
 		$this->call('UserTableSeeder');
 	}
-
 }
 
 class UserTableSeeder extends Seeder
 {
-
 	public function run()
 	{
 		DB::table('users')->delete();
@@ -27,6 +24,10 @@ class UserTableSeeder extends Seeder
 			'email'    => 'richard.tetaz@gmail.com',
 			'password' => Hash::make('password')
 		));
+		User::create(array(
+			'username' => 'Zodd',
+			'email'    => 'guillaume.thomy@gmail.com',
+			'password' => Hash::make('password')
+		));
 	}
-
 }
