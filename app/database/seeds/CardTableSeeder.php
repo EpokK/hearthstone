@@ -6,25 +6,314 @@ class CardTableSeeder extends Seeder {
 		DB::table('cards')->delete();
 		// MAGE
 		Card::create(array(
-			'name' => ''
-			'rarity' => ''
+			'name' => 'Arcane Missiles',
+			'rarity' => 'BASIC',
+				// 'BASIC'
 				// 'COMMON',
 				// 'RARE',
 				// 'EPIC',
 				// 'LEGENDARY'
 			'image1' => '',
 			'image2' => '',
-			'cost' => '',
+			'cost' => '1',
 			'attack' => '',
 			'life' => '',
-			'description' => '',
-			'type' => ''
+			'description' => 'Deal 3 damage randomly split among enemy characters.',
+			'type' => 'NONE',
 				// 'DRAGON',
 				// 'BEAST',
 				// 'MURLOC',
 				// 'PIRATE',
 				// 'NONE'
-			'hero' => ''
+			'hero' => 'MAGE'
+				// 'MAGE',
+				// 'WARLOCK',
+				// 'HUNTER',
+				// 'WARRIOR',
+				// 'PALADIN',
+				// 'SHAMAN',
+				// 'DRUID',
+				// 'PRIEST',
+				// 'ROGUE',
+				// 'NEUTRAL'
+		));
+		Card::create(array(
+			'name' => 'Mirror Image',
+			'rarity' => 'BASIC',
+				// 'BASIC'
+				// 'COMMON',
+				// 'RARE',
+				// 'EPIC',
+				// 'LEGENDARY'
+			'image1' => '',
+			'image2' => '',
+			'cost' => '1',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Summon two 0/2 minions with Taunt.',
+			'type' => 'NONE',
+				// 'DRAGON',
+				// 'BEAST',
+				// 'MURLOC',
+				// 'PIRATE',
+				// 'NONE'
+			'hero' => 'MAGE'
+				// 'MAGE',
+				// 'WARLOCK',
+				// 'HUNTER',
+				// 'WARRIOR',
+				// 'PALADIN',
+				// 'SHAMAN',
+				// 'DRUID',
+				// 'PRIEST',
+				// 'ROGUE',
+				// 'NEUTRAL'
+		));
+		Card::create(array(
+			'name' => 'Arcane Explosion',
+			'rarity' => 'BASIC',
+				// 'BASIC'
+				// 'COMMON',
+				// 'RARE',
+				// 'EPIC',
+				// 'LEGENDARY'
+			'image1' => '',
+			'image2' => '',
+			'cost' => '2',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Deal 1 damage to all enemy minions.',
+			'type' => 'NONE',
+				// 'DRAGON',
+				// 'BEAST',
+				// 'MURLOC',
+				// 'PIRATE',
+				// 'NONE'
+			'hero' => 'MAGE'
+				// 'MAGE',
+				// 'WARLOCK',
+				// 'HUNTER',
+				// 'WARRIOR',
+				// 'PALADIN',
+				// 'SHAMAN',
+				// 'DRUID',
+				// 'PRIEST',
+				// 'ROGUE',
+				// 'NEUTRAL'
+		));
+		Card::create(array(
+			'name' => 'Frostbolt',
+			'rarity' => 'BASIC',
+				// 'BASIC'
+				// 'COMMON',
+				// 'RARE',
+				// 'EPIC',
+				// 'LEGENDARY'
+			'image1' => '',
+			'image2' => '',
+			'cost' => '2',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Deal 3 damage to a character and Freeze it.',
+			'type' => 'NONE',
+				// 'DRAGON',
+				// 'BEAST',
+				// 'MURLOC',
+				// 'PIRATE',
+				// 'NONE'
+			'hero' => 'MAGE'
+				// 'MAGE',
+				// 'WARLOCK',
+				// 'HUNTER',
+				// 'WARRIOR',
+				// 'PALADIN',
+				// 'SHAMAN',
+				// 'DRUID',
+				// 'PRIEST',
+				// 'ROGUE',
+				// 'NEUTRAL'
+		));
+		Card::create(array(
+			'name' => 'Arcane Intellect',
+			'rarity' => 'BASIC',
+				// 'BASIC'
+				// 'COMMON',
+				// 'RARE',
+				// 'EPIC',
+				// 'LEGENDARY'
+			'image1' => '',
+			'image2' => '',
+			'cost' => '3',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Draw 2 cards.',
+			'type' => 'NONE',
+				// 'DRAGON',
+				// 'BEAST',
+				// 'MURLOC',
+				// 'PIRATE',
+				// 'NONE'
+			'hero' => 'MAGE'
+				// 'MAGE',
+				// 'WARLOCK',
+				// 'HUNTER',
+				// 'WARRIOR',
+				// 'PALADIN',
+				// 'SHAMAN',
+				// 'DRUID',
+				// 'PRIEST',
+				// 'ROGUE',
+				// 'NEUTRAL'
+		));
+		Card::create(array(
+			'name' => 'Frost Nova',
+			'rarity' => 'BASIC',
+				// 'BASIC'
+				// 'COMMON',
+				// 'RARE',
+				// 'EPIC',
+				// 'LEGENDARY'
+			'image1' => '',
+			'image2' => '',
+			'cost' => '3',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Freeze all enemy minions.',
+			'type' => 'NONE',
+				// 'DRAGON',
+				// 'BEAST',
+				// 'MURLOC',
+				// 'PIRATE',
+				// 'NONE'
+			'hero' => 'MAGE'
+				// 'MAGE',
+				// 'WARLOCK',
+				// 'HUNTER',
+				// 'WARRIOR',
+				// 'PALADIN',
+				// 'SHAMAN',
+				// 'DRUID',
+				// 'PRIEST',
+				// 'ROGUE',
+				// 'NEUTRAL'
+		));
+		Card::create(array(
+			'name' => 'Fireball',
+			'rarity' => 'BASIC',
+				// 'BASIC'
+				// 'COMMON',
+				// 'RARE',
+				// 'EPIC',
+				// 'LEGENDARY'
+			'image1' => '',
+			'image2' => '',
+			'cost' => '4',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Deal 6 damage.',
+			'type' => 'NONE',
+				// 'DRAGON',
+				// 'BEAST',
+				// 'MURLOC',
+				// 'PIRATE',
+				// 'NONE'
+			'hero' => 'MAGE'
+				// 'MAGE',
+				// 'WARLOCK',
+				// 'HUNTER',
+				// 'WARRIOR',
+				// 'PALADIN',
+				// 'SHAMAN',
+				// 'DRUID',
+				// 'PRIEST',
+				// 'ROGUE',
+				// 'NEUTRAL'
+		));
+			Card::create(array(
+			'name' => 'Polymorph',
+			'rarity' => 'BASIC',
+				// 'BASIC'
+				// 'COMMON',
+				// 'RARE',
+				// 'EPIC',
+				// 'LEGENDARY'
+			'image1' => '',
+			'image2' => '',
+			'cost' => '4',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Transform a minion into a 1/1 Sheep.',
+			'type' => 'NONE',
+				// 'DRAGON',
+				// 'BEAST',
+				// 'MURLOC',
+				// 'PIRATE',
+				// 'NONE'
+			'hero' => 'MAGE'
+				// 'MAGE',
+				// 'WARLOCK',
+				// 'HUNTER',
+				// 'WARRIOR',
+				// 'PALADIN',
+				// 'SHAMAN',
+				// 'DRUID',
+				// 'PRIEST',
+				// 'ROGUE',
+				// 'NEUTRAL'
+		));
+				Card::create(array(
+			'name' => 'Water Elemental',
+			'rarity' => 'BASIC',
+				// 'BASIC'
+				// 'COMMON',
+				// 'RARE',
+				// 'EPIC',
+				// 'LEGENDARY'
+			'image1' => '',
+			'image2' => '',
+			'cost' => '4',
+			'attack' => '3',
+			'life' => '6',
+			'description' => 'Freeze any character damaged by this minion.',
+			'type' => 'NONE',
+				// 'DRAGON',
+				// 'BEAST',
+				// 'MURLOC',
+				// 'PIRATE',
+				// 'NONE'
+			'hero' => 'MAGE'
+				// 'MAGE',
+				// 'WARLOCK',
+				// 'HUNTER',
+				// 'WARRIOR',
+				// 'PALADIN',
+				// 'SHAMAN',
+				// 'DRUID',
+				// 'PRIEST',
+				// 'ROGUE',
+				// 'NEUTRAL'
+		));
+			Card::create(array(
+			'name' => 'Flamestrike',
+			'rarity' => 'BASIC',
+				// 'BASIC'
+				// 'COMMON',
+				// 'RARE',
+				// 'EPIC',
+				// 'LEGENDARY'
+			'image1' => '',
+			'image2' => '',
+			'cost' => '7',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Deal 4 damage to all enemy minions.',
+			'type' => 'NONE',
+				// 'DRAGON',
+				// 'BEAST',
+				// 'MURLOC',
+				// 'PIRATE',
+				// 'NONE'
+			'hero' => 'MAGE'
 				// 'MAGE',
 				// 'WARLOCK',
 				// 'HUNTER',
