@@ -31,3 +31,21 @@ class UserTableSeeder extends Seeder
 		));
 	}
 }
+
+class DeckTableSeeder extends Seeder
+{
+	public function run()
+	{
+		// DB::table('decks')->delete();
+		// User::create(array(
+		// 	'username' => 'EpokK',
+		// 	'email'    => 'richard.tetaz@gmail.com',
+		// 	'password' => Hash::make('password')
+		// ));
+		// User::create(array(
+		// 	'username' => 'Zodd',
+		// 	'email'    => 'guillaume.thomy@gmail.com',
+		// 	'password' => Hash::make('password')
+		// ));
+	}
+}

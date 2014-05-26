@@ -17,6 +17,7 @@ class CreateCardsTable extends Migration {
 			$table->increments('id');
 			$table->string('name', 32);
 			$table->enum('rarity', array(
+				'BASIC',
 				'COMMON',
 				'RARE',
 				'EPIC',

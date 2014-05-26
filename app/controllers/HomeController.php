@@ -69,4 +69,9 @@ class HomeController extends BaseController {
 		return Redirect::to('login');
 	}
 
+	public function deckList() {
+		$decks = DB::table('decks')->paginate(20);
+		return View::make('deckList')->with('decks', $decks);
+	}
+
 }
