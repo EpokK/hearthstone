@@ -44,6 +44,69 @@ class DeckTableSeeder extends Seeder
 			'type' => 'AGGRO',
 			'hero' => 'WARLOCK'
 		));
-
+		DB::table('decks')->delete();
+		User::create(array(
+			'user_id' => 2,
+			'public' => false,
+			'name' => 'Huntard',
+			'type' => 'AGGRO',
+			'hero' => 'HUNTER'
+		));
+		DB::table('decks')->delete();
+		User::create(array(
+			'user_id' => 2,
+			'public' => false,
+			'name' => 'ancient watcher',
+			'type' => 'CONTROL',
+			'hero' => 'DRUID'
+		));
+		DB::table('decks')->delete();
+		User::create(array(
+			'user_id' => 2,
+			'public' => true,
+			'name' => 'miracle',
+			'type' => 'COMBO',
+			'hero' => 'ROGUE'
+		));
+		DB::table('decks')->delete();
+		User::create(array(
+			'user_id' => 2,
+			'public' => true,
+			'name' => 'Bloodlust Teacher',
+			'type' => 'MIDRANGE',
+			'hero' => 'SHAMAN'
+		));
+		DB::table('decks')->delete();
+		User::create(array(
+			'user_id' => 2,
+			'public' => false,
+			'name' => 'Amaz',
+			'type' => 'MIDRANGE',
+			'hero' => 'PRIEST'
+		));
+		DB::table('decks')->delete();
+		User::create(array(
+			'user_id' => 2,
+			'public' => false,
+			'name' => 'Weapon master',
+			'type' => 'AGGRO',
+			'hero' => 'WARRIOR'
+		));
+		DB::table('decks')->delete();
+		User::create(array(
+			'user_id' => 2,
+			'public' => true,
+			'name' => 'Frost',
+			'type' => 'COMBO',
+			'hero' => 'MAGE'
+		));
+		DB::table('decks')->delete();
+		User::create(array(
+			'user_id' => 2,
+			'public' => true,
+			'name' => 'palaheal',
+			'type' => 'CONTROL',
+			'hero' => 'PALADIN'
+		));
 	}
 }
