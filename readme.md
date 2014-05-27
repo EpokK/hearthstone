@@ -1,4 +1,4 @@
-## HearthStone
+## Hearthstone Analytics
 
 - [X] Completer les seed du MAGE
 - [ ] Completer les seed du WARRIOR
@@ -10,3 +10,4 @@
 - [ ] Completer les seed du WARLOCK
 - [ ] Completer les seed du HUNTER
 - [ ] Recuperer les images des heros (http://www.hearthpwn.com/deckbuilder)
+- [ ] Dev le front pour le builder
