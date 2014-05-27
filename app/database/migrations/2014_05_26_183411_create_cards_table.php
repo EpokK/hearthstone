@@ -22,20 +22,21 @@ class CreateCardsTable extends Migration {
 				'RARE',
 				'EPIC',
 				'LEGENDARY'
-			));
+			))->default('BASIC');
 			$table->string('image1', 128);
 			$table->string('image2', 128);
 			$table->integer('cost');
-			$table->integer('attack');
-			$table->integer('life');
+			$table->integer('attack')->nullable();
+			$table->integer('life')->nullable();
 			$table->mediumText('description');
 			$table->enum('type', array(
 				'DRAGON',
 				'BEAST',
 				'MURLOC',
 				'PIRATE',
+				'WEAPON',
 				'NONE'
-			));
+			))->default('NONE');
 			$table->enum('hero', array(
 				'MAGE',
 				'WARLOCK',
@@ -47,7 +48,8 @@ class CreateCardsTable extends Migration {
 				'PRIEST',
 				'ROGUE',
 				'NEUTRAL'
-			));
+			))->default('NEUTRAL');
+			$table->timestamps();
 		});
 	}
 

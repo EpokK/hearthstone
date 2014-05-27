@@ -89,7 +89,7 @@ class CardTableSeeder extends Seeder {
 			'type' => 'NONE',
 			'hero' => 'MAGE'
 		));
-			Card::create(array(
+		Card::create(array(
 			'name' => 'Polymorph',
 			'rarity' => 'BASIC',
 			'image1' => '',
@@ -101,7 +101,7 @@ class CardTableSeeder extends Seeder {
 			'type' => 'NONE',
 			'hero' => 'MAGE'
 		));
-				Card::create(array(
+		Card::create(array(
 			'name' => 'Water Elemental',
 			'rarity' => 'BASIC',
 			'image1' => '',
@@ -173,7 +173,7 @@ class CardTableSeeder extends Seeder {
 			'description' => 'Secret: As soon as your hero is attacked, gain 8 Armor.',
 			'type' => 'NONE',
 			'hero' => 'MAGE'
-		));		
+		));
 			Card::create(array(
 			'name' => 'Mirror Entity',
 			'rarity' => 'COMMON',
@@ -917,7 +917,7 @@ class CardTableSeeder extends Seeder {
 			'life' => '8',
 			'description' => 'Charge.',
 			'type' => 'BEAST',
-			'hero' => 'HUNTER' 
+			'hero' => 'HUNTER'
 		));
 			// Paladin Basic
 			Card::create(array(

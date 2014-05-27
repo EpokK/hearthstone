@@ -12,6 +12,7 @@ class DatabaseSeeder extends Seeder {
 
 		$this->call('UserTableSeeder');
 		$this->call('DeckTableSeeder');
+		$this->call('CardTableSeeder');
 	}
 }
 
@@ -32,6 +33,17 @@ class UserTableSeeder extends Seeder
 		));
 	}
 }
+
+// class CardDeckTableSeeder extends Seeder {
+// 	public function run() {
+// 		DB::table('card_deck')->delete();
+// 		User::create(array(
+// 			'id' => 'EpokK',
+// 			'email'    => 'richard.tetaz@gmail.com',
+// 			'password' => Hash::make('password')
+// 		));
+// 	}
+// }
 
 class DeckTableSeeder extends Seeder
 {

@@ -27,4 +27,4 @@ Route::get('deck', array('uses' => 'HomeController@showDecklist'));
 Route::get('deck/create', array('uses' => 'HomeController@showDeckbuilder'));
 
 // route to display a deck
-Route::get('deck/show', array('uses' => 'HomeController@showDeck'));
+Route::get('deck/show/{id}', array('uses' => 'HomeController@showDeck'));

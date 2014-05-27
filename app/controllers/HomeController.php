@@ -78,4 +78,13 @@ class HomeController extends BaseController {
 		return View::make('deckbuilder');
 	}
 
+	public function showDeck($id) {
+
+		$deck = Deck::find($id);
+		$cards = Deck::find($id)->cards;
+		return View::make('deck')
+			->with('deck', $deck)
+			->with('cards', $cards);
+	}
+
 }
