@@ -11,3 +11,21 @@
 - [ ] Completer les seed du HUNTER
 - [ ] Recuperer les images des heros (http://www.hearthpwn.com/deckbuilder)
 - [ ] Dev le front pour le builder
+
+## Installation
+
+create a `hearthstone` database (`root` / `root`)
+
+get composer : [https://getcomposer.org/doc/00-intro.md](https://getcomposer.org/doc/00-intro.md)
+
+installing dependencies
+
+`php composer.phar install`
+
+migration
+
+`php artisan migrate`
+
+seed
+
+`php artisan db:seed`
