@@ -1,23 +1,11 @@
 <?php
 
-class HomeController extends BaseController {
-
-	/*
-	|--------------------------------------------------------------------------
-	| Default Home Controller
-	|--------------------------------------------------------------------------
-	|
-	| You may wish to use controllers instead of, or in addition to, Closure
-	| based routes. That's great! Here is an example controller method to
-	| get you started. To route to this controller, just add the route:
-	|
-	|	Route::get('/', 'HomeController@showWelcome');
-	|
-	*/
+class AccountController extends BaseController {
+	protected $layout = 'layouts.account';
 
 	public function showLogin() {
 		// show the form
-		return View::make('login');
+		$this->layout->content = View::make('login');
 	}
 
 	public function doLogin()
@@ -68,23 +56,4 @@ class HomeController extends BaseController {
 		Auth::logout();
 		return Redirect::to('login');
 	}
-
-	public function showDecklist() {
-		$decks = DB::table('decks')->paginate(20);
-		return View::make('decklist')->with('decks', $decks);
-	}
-
-	public function showDeckbuilder() {
-		return View::make('deckbuilder');
-	}
-
-	public function showDeck($id) {
-
-		$deck = Deck::find($id);
-		$cards = Deck::find($id)->cards;
-		return View::make('deck')
-			->with('deck', $deck)
-			->with('cards', $cards);
-	}
-
 }

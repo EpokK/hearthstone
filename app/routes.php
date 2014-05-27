@@ -12,13 +12,13 @@
 */
 
 // route to show the login form
-Route::get('login', array('uses' => 'HomeController@showLogin'));
+Route::get('login', array('uses' => 'AccountController@showLogin'));
 
 // route to process the form
-Route::post('login', array('uses' => 'HomeController@doLogin'));
+Route::post('login', array('uses' => 'AccountController@doLogin'));
 
 // route to logout
-Route::get('logout', array('uses' => 'HomeController@doLogout'));
+Route::get('logout', array('uses' => 'AccountController@doLogout'));
 
 // route to display deck list
 Route::get('deck', array('uses' => 'HomeController@showDecklist'));
@@ -27,4 +27,13 @@ Route::get('deck', array('uses' => 'HomeController@showDecklist'));
 Route::get('deck/create', array('uses' => 'HomeController@showDeckbuilder'));
 
 // route to display a deck
-Route::get('deck/show/{id}', array('uses' => 'HomeController@showDeck'));
+Route::get('deck/{id}', array('uses' => 'HomeController@showDeck'));
+
+// route to delete a deck
+Route::post('deck/{id}/delete', array('uses' => 'HomeController@deleteDeck'));
+
+// route to add card in a deck
+Route::post('deck/{deck_id}/add/{card_id}', array('uses' => 'HomeController@addCard'));
+
+// route to remove card in a deck
+Route::post('deck/{deck_id}/delete/{card_id}', array('uses' => 'HomeController@deleteCard'));
