@@ -74,4 +74,8 @@ class HomeController extends BaseController {
 		return View::make('decklist')->with('decks', $decks);
 	}
 
+	public function showDeckbuilder() {
+		return View::make('deckbuilder');
+	}
+
 }

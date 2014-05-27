@@ -22,3 +22,9 @@ Route::get('logout', array('uses' => 'HomeController@doLogout'));
 
 // route to display deck list
 Route::get('deck', array('uses' => 'HomeController@showDecklist'));
+
+// route to show deck builder
+Route::get('deck/create', array('uses' => 'HomeController@showDeckbuilder'));
+
+// route to display a deck
+Route::get('deck/show', array('uses' => 'HomeController@showDeck'));
