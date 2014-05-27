@@ -309,5 +309,310 @@ class CardTableSeeder extends Seeder {
 			'type' => 'NONE',
 			'hero' => 'MAGE'
 		));
+			// DRUID BASIC
+			Card::create(array(
+			'name' => 'Moonfire',
+			'rarity' => 'BASIC',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '0',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Deal 1 damage.',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
+			Card::create(array(
+			'name' => 'Innervate',
+			'rarity' => 'BASIC',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '0',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Gain 2 Mana Crystals this turn only.',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
+			Card::create(array(
+			'name' => 'Claw',
+			'rarity' => 'BASIC',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '1',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Give your hero +2 Attack this turn and 2 Armor.',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
+			Card::create(array(
+			'name' => 'Wild Gromth',
+			'rarity' => 'BASIC',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '2',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Gain an empty Mana Crystal.',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
+			Card::create(array(
+			'name' => 'Mark of the Wild',
+			'rarity' => 'BASIC',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '2',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Give a minion Taunt and +2/+2 (+2 Attack/ +2 Health).',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
+			Card::create(array(
+			'name' => 'Savage Roar',
+			'rarity' => 'BASIC',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '3',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Give your characters +2 Attacks this turn.',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
+			Card::create(array(
+			'name' => 'Healing Touch',
+			'rarity' => 'BASIC',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '3',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Restore 8 Health.',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
+			Card::create(array(
+			'name' => 'Swipe',
+			'rarity' => 'BASIC',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '4',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Deal 4 damage to an anemy and 1 damage to all other enemies.',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
+			Card::create(array(
+			'name' => 'Starfire',
+			'rarity' => 'BASIC',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '6',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Deal 5 damage. Draw a card.',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
+			Card::create(array(
+			'name' => 'Ironbark protector',
+			'rarity' => 'BASIC',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '8',
+			'attack' => '8',
+			'life' => '8',
+			'description' => 'Taunt',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
+			// DRUID COMMON
+			Card::create(array(
+			'name' => 'Naturalize',
+			'rarity' => 'COMMON',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '1',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Destroy a minion. Your opponent draws 2 cards.',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
+			Card::create(array(
+			'name' => 'Wrath',
+			'rarity' => 'COMMON',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '2',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Choose One - Deal 3 damage to a minion; or 1 damage and draw a card.',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
+			Card::create(array(
+			'name' => 'Power of the Wild',
+			'rarity' => 'COMMON',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '2',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Choose One - Give your minions +1/+1; or Summon a 3/2 Panther.',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
+			Card::create(array(
+			'name' => 'Mark of Nature',
+			'rarity' => 'COMMON',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '3',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Choose One - Give a minion +4 Attacks; or +4 Health and Taunt.',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
+			Card::create(array(
+			'name' => 'Soul of the Forest',
+			'rarity' => 'COMMON',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '4',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Give your minions " Deathrattle: Summon a 2/2 treant.',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
+			Card::create(array(
+			'name' => 'Druid of the Claw',
+			'rarity' => 'COMMON',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '4',
+			'attack' => '4',
+			'life' => '4',
+			'description' => 'Choose One - Charge; or +2 Health and Taunt.',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
+			// DRUID RARE
+			Card::create(array(
+			'name' => 'Savagery',
+			'rarity' => 'RARE',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '1',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Deal damage equal to your hero\'s Attack to a minion.',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
+			Card::create(array(
+			'name' => 'Bite',
+			'rarity' => 'RARE',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '4',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Give your hero +4 Attack this turn and 4 Armor.',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
+			Card::create(array(
+			'name' => 'Keeper of the Grove',
+			'rarity' => 'RARE',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '4',
+			'attack' => '2',
+			'life' => '4',
+			'description' => 'Choose One - Deal 2 damage; or Silence a minion.',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
+			Card::create(array(
+			'name' => 'Nourish',
+			'rarity' => 'RARE',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '5',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Choose One - Gain 2 Mana Crystals; or Draw 3 cards.',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
+			Card::create(array(
+			'name' => 'Starfall',
+			'rarity' => 'RARE',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '5',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Choose One - Deal 5 damage to a minion; or 2 damage to all enemy minions.',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
+			// DRUID EPIC
+			Card::create(array(
+			'name' => 'Force of Nature',
+			'rarity' => 'EPIC',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '6',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Summon three 2/2 Treants with Charge that die at the end of the turn.',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
+			Card::create(array(
+			'name' => 'Ancient of Lore',
+			'rarity' => 'EPIC',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '7',
+			'attack' => '',
+			'life' => '',
+			'description' => 'Choose One - Draw 2 cards; or Restore 5 Health.',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
+			Card::create(array(
+			'name' => 'Ancient of War',
+			'rarity' => 'EPIC',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '7',
+			'attack' => '5',
+			'life' => '5',
+			'description' => 'Choose One - +5 Attacks; or +5 Health and Taunt.',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
+			// DRUID LEGENDARY
+			Card::create(array(
+			'name' => 'Cenarius',
+			'rarity' => 'LEGENDARY',
+			'image1' => '',
+			'image2' => '',
+			'cost' => '9',
+			'attack' => '5',
+			'life' => '8',
+			'description' => 'Choose One - Give your other minions +2/+2; or Summon two 2/2 Treants with Taunt.',
+			'type' => 'NONE',
+			'hero' => 'DRUID'
+		));
 	}
 }
