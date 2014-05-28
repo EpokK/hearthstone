@@ -1,5 +1,5 @@
 @section('content')
-<a href="{{ action('HomeController@showDeckbuilder') }}">Creer un nouveau deck</a>
+<a href="{{ action('HomeController@showDeckbuilder') }}" class="btn btn-primary" title="Creer un nouveau deck">Nouveau deck</a>
 <h3>Decklist</h3>
 <table class="table">
 	<thead>

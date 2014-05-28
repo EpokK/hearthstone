@@ -1,10 +1,4 @@
-<!doctype html>
-<html>
-<head>
-	<title>Look at me Login</title>
-</head>
-<body>
-
+@section('content')
 	{{ Form::open(array('url' => 'login')) }}
 		<h1>Login</h1>
 
@@ -25,5 +19,4 @@
 
 		<p>{{ Form::submit('Submit!') }}</p>
 	{{ Form::close() }}
-</body>
-</html>
+@stop
