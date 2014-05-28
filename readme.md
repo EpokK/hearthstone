@@ -1,5 +1,5 @@
 ## Hearthstone Analytics
-
+- [X] Recuperer les cartes
 - [X] Completer les seed du MAGE
 - [ ] Completer les seed du WARRIOR
 - [ ] Completer les seed du ROGUE

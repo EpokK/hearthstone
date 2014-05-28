@@ -13,11 +13,9 @@
 	</div>
 	<div class="form-group">
 		<label for="name">Name</label>
-		<input type="text" class="form-control" id="name" name="name" />
+		<input type="text" class="form-control" id="name" name="name" placeholder="Name of deck" />
 	</div>
 </form>
-<ul id="deck">
-</ul>
 <script type="text/javascript">
 
 </script>

@@ -11,29 +11,39 @@
 |
 */
 
+Route::get('/', function() {
+	if(Auth::check()) {
+		return Redirect::route('deck');
+	} else {
+		return Redirect::route('login');
+	}
+});
+
 // route to show the login form
-Route::get('login', array('uses' => 'AccountController@showLogin'));
+Route::get('/login', array('as' => 'login', 'uses' => 'AccountController@showLogin'));
 
 // route to process the form
-Route::post('login', array('uses' => 'AccountController@doLogin'));
+Route::post('/login', array('as' => 'login', 'uses' => 'AccountController@doLogin'));
 
 // route to logout
-Route::get('logout', array('uses' => 'AccountController@doLogout'));
+Route::get('/logout', array('as' => 'logout', 'uses' => 'AccountController@doLogout'));
 
-// route to display deck list
-Route::get('deck', array('uses' => 'HomeController@showDecklist'));
+Route::group(array('prefix' => 'deck', 'before' => 'auth'), function() {
+	// route to display deck list
+	Route::get('/', array('uses' => 'HomeController@showDecklist'));
 
-// route to show deck builder
-Route::get('deck/create', array('uses' => 'HomeController@showDeckbuilder'));
+	// route to show deck builder
+	Route::get('/create', array('uses' => 'HomeController@showDeckbuilder'));
 
-// route to display a deck
-Route::get('deck/{id}', array('uses' => 'HomeController@showDeck'));
+	// route to display a deck
+	Route::get('/{id}', array('uses' => 'HomeController@showDeck'));
 
-// route to delete a deck
-Route::post('deck/{id}/delete', array('uses' => 'HomeController@deleteDeck'));
+	// route to delete a deck
+	Route::post('/{id}/delete', array('uses' => 'HomeController@deleteDeck'));
 
-// route to add card in a deck
-Route::post('deck/{deck_id}/add/{card_id}', array('uses' => 'HomeController@addCard'));
+	// route to add card in a deck
+	Route::post('/{deck_id}/add/{card_id}', array('uses' => 'HomeController@addCard'));
 
-// route to remove card in a deck
-Route::post('deck/{deck_id}/delete/{card_id}', array('uses' => 'HomeController@deleteCard'));
+	// route to remove card in a deck
+	Route::post('/{deck_id}/delete/{card_id}', array('uses' => 'HomeController@deleteCard'));
+});
