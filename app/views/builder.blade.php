@@ -2,21 +2,23 @@
 <a href="{{ action('HomeController@showDecklist') }}">Retour aux decks</a>
 
 <h3>Nouveau deck</h3>
-
-<label for="hero">Hero</label>
-<select name="hero" id="hero">
-@foreach (Deck::heros() as $hero)
-	<option value="{{ $hero }}">{{ $hero }}</option>
-@endforeach
-</select>
-<br>
-<label for="name">Name</label>
-<input type="text" id="name" name="name" />
-<br>
+<form role="form">
+	<div class="form-group">
+		<label for="hero">Hero</label>
+		<select name="hero" id="hero" class="form-control">
+		@foreach (Deck::heros() as $hero)
+			<option value="{{ $hero }}">{{ $hero }}</option>
+		@endforeach
+		</select>
+	</div>
+	<div class="form-group">
+		<label for="name">Name</label>
+		<input type="text" class="form-control" id="name" name="name" />
+	</div>
+</form>
 <ul id="deck">
 </ul>
 <script type="text/javascript">
- // todo a completer
-</script>
 
+</script>
 @stop

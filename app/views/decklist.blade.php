@@ -1,7 +1,7 @@
 @section('content')
 <a href="{{ action('HomeController@showDeckbuilder') }}">Creer un nouveau deck</a>
 <h3>Decklist</h3>
-<table>
+<table class="table">
 	<thead>
 		<tr>
 			<th>Name</th>
@@ -15,10 +15,10 @@
 			<tr>
 				<td>{{ $deck->name }}</td>
 				<td>{{ $deck->hero }}</td>
-				<td>{{ $deck->type }}</td>
+				<td><span class="label label-default">{{ $deck->type }}</span></td>
 				<td>
-					<a href="{{ action('HomeController@showDeck', $deck->id) }}" title="Voir">Voir</a>
-					<a href="{{ action('HomeController@deleteDeck', $deck->id) }}" title="Supprimer">Supprimer</a>
+					<a class="glyphicon glyphicon-eye-open" href="{{ action('HomeController@showDeck', $deck->id) }}" title="Voir"></a>
+					<a class="glyphicon glyphicon-remove" href="{{ action('HomeController@deleteDeck', $deck->id) }}" title="Supprimer"></a>
 				</td>
 			</tr>
 		@endforeach
