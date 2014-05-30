@@ -1,6 +1,7 @@
 @section('content')
-	<h3>Login</h3>
-	{{ Form::open(array('url' => 'login')) }}
+	<h3>Subscribe</h3>
+
+	{{ Form::open(array('url' => 'subscribe')) }}
 		<p>
 			{{ $errors->first('email') }}
 			{{ $errors->first('password') }}
@@ -19,5 +20,5 @@
 		<p>{{ Form::submit('Submit') }}</p>
 	{{ Form::close() }}
 
-	<a href="{{ action('AccountController@showSubscribe') }}">Subscribe</a>
+	<a href="{{ action('AccountController@showLogin') }}">Login</a>
 @stop

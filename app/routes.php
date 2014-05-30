@@ -22,11 +22,17 @@ Route::get('/', function() {
 // route to show the login form
 Route::get('/login', array('as' => 'login', 'uses' => 'AccountController@showLogin'));
 
-// route to process the form
+// route to process the login form
 Route::post('/login', array('as' => 'login', 'uses' => 'AccountController@doLogin'));
 
 // route to logout
 Route::get('/logout', array('as' => 'logout', 'uses' => 'AccountController@doLogout'));
+
+// route to show the subscribe form
+Route::get('/subscribe', array('as' => 'subscribe', 'uses' => 'AccountController@showSubscribe'));
+
+// route to process the subscribe form
+Route::post('/subscribe', array('as' => 'subscribe', 'uses' => 'AccountController@doSubscribe'));
 
 Route::group(array('prefix' => 'deck', 'before' => 'auth'), function() {
 	// route to display deck list
